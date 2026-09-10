@@ -1,3 +1,5 @@
+import PartnerProof from "./PartnerProof";
+
 const services = [
   {
     number: "01",
@@ -138,17 +140,22 @@ export default function Home() {
               <strong>Eine Pflegefachkraft denkt über einen Wechsel nach.</strong>
               <p>Bevor sie sich bewirbt, schaut sie nach, wie der mögliche neue Arbeitgeber wirkt.</p>
             </div>
-            <p className="hero-card-end">Zwei Menschen. Zwei Entscheidungen. Ein gemeinsamer erster Schritt: <strong>Sie googeln Sie.</strong></p>
+            <p className="hero-card-end">
+              Zwei Menschen. Zwei Entscheidungen. Ein gemeinsamer erster Schritt: <strong>Sie googeln Sie.</strong>
+            </p>
           </div>
         </div>
       </section>
+
+      <PartnerProof />
 
       <section className="section story-section" id="warum">
         <div className="container narrow">
           <p className="eyebrow">Was online passiert, bevor das Telefon klingelt</p>
           <h2>Menschen entscheiden nicht zuerst mit einer Leistungsübersicht. Sie entscheiden mit einem Gefühl.</h2>
           <p className="section-lead">
-            Ist dieser Ort vertrauenswürdig? Wirkt dieses Team sympathisch? Würde ich hier gerne arbeiten? Kann ich meine Mutter oder meinen Vater hier guten Gewissens betreuen lassen?
+            Ist dieser Ort vertrauenswürdig? Wirkt dieses Team sympathisch? Würde ich hier gerne arbeiten? Kann ich
+            meine Mutter oder meinen Vater hier guten Gewissens betreuen lassen?
           </p>
         </div>
 
