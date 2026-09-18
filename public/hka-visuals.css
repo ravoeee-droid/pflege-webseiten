@@ -1,0 +1,35 @@
+/* HKA visual performance layer */
+.orbitcore{width:min(590px,100%);aspect-ratio:1.12;border:0;border-radius:30px;overflow:hidden;box-shadow:var(--shadow);background:var(--sage)}
+.orbitcore:before{inset:0;border:0;border-radius:0;background:linear-gradient(180deg,rgba(16,52,59,.02) 48%,rgba(16,52,59,.58) 100%);z-index:1}
+.orbitcore:after{inset:0;border:1px solid rgba(255,255,255,.32);border-radius:30px;z-index:2;pointer-events:none}
+.orbitcore>.hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;z-index:0}
+.orbitcore .pulse,.orbitcore .homeglyph{display:none}
+.orbitlabel{z-index:4;background:rgba(247,244,237,.94);backdrop-filter:blur(10px)}
+.orbitcaption{z-index:5;left:2%;bottom:2%;width:235px}
+.visual-story{padding:104px 0;background:var(--paper);content-visibility:auto;contain-intrinsic-size:760px}
+.visual-story-head{display:grid;grid-template-columns:1.04fr .96fr;gap:70px;align-items:end;margin-bottom:42px}
+.visual-story-head h2{font:500 clamp(48px,5vw,74px)/.96 var(--serif);letter-spacing:-.052em;margin:16px 0 0}
+.visual-story-head h2 em{font-style:italic;color:var(--coral)}
+.visual-story-head p{font-size:17px;line-height:1.65;color:var(--text);margin:0}
+.visual-story-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:14px}
+.visual-card{position:relative;margin:0;overflow:hidden;min-height:420px;background:var(--sage)}
+.visual-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s ease}
+.visual-card:hover img{transform:scale(1.025)}
+.visual-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(8,37,43,.78) 100%)}
+.visual-card-main{min-height:500px}
+.visual-copy{position:absolute;z-index:2;left:30px;right:30px;bottom:28px;color:#fff}
+.visual-copy small{display:block;font-size:9px;font-weight:950;letter-spacing:.16em;color:#f7c5bf;margin-bottom:9px}
+.visual-copy strong{display:block;font:500 clamp(25px,3vw,38px)/1.05 var(--serif);letter-spacing:-.035em;max-width:520px}
+.career-visual-equation{padding:0;overflow:hidden;transform:rotate(1deg)}
+.career-hero-photo{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+.career-visual-equation .equationtop,.career-visual-equation .eqrow,.career-visual-equation .eqsum{margin-left:34px;margin-right:34px}
+.career-visual-equation .equationtop{margin-top:26px}
+.career-visual-equation .eqsum{margin-bottom:34px}
+.recruiting-card{padding:0;overflow:hidden}
+.recruiting-photo{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+.recruiting-card>small,.recruiting-card>h2,.recruiting-card>.point{margin-left:36px;margin-right:36px}
+.recruiting-card>small:first-of-type{display:block;margin-top:27px}
+.recruiting-card>small:last-child{display:block;margin-bottom:34px}
+@media(max-width:900px){.visual-story-head,.visual-story-grid{grid-template-columns:1fr;gap:24px}.visual-card,.visual-card-main{min-height:390px}.career-visual-equation{transform:none}}
+@media(max-width:650px){.orbitcore{aspect-ratio:1.05}.orbitcaption{left:10px;bottom:10px;width:min(230px,72%)}.visual-story{padding:76px 0}.visual-story-head h2{font-size:45px}.visual-card,.visual-card-main{min-height:310px}.visual-copy{left:22px;right:22px;bottom:21px}.career-visual-equation .equationtop,.career-visual-equation .eqrow,.career-visual-equation .eqsum{margin-left:26px;margin-right:26px}.recruiting-card>small,.recruiting-card>h2,.recruiting-card>.point{margin-left:28px;margin-right:28px}}
+@media(prefers-reduced-motion:reduce){.visual-card img{transition:none}.visual-card:hover img{transform:none}}
